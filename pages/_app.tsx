@@ -26,7 +26,14 @@ function MyApp({ Component, pageProps }: AppProps) {
 				/>
 				<link
 					rel="preload"
-					href="/public/fonts/Orbitron Medium.ttf"
+					href="/public/fonts/Orbitron-Medium.ttf"
+					as="font"
+					type="font/ttf"
+					crossOrigin=""
+				/>
+				<link
+					rel="preload"
+					href="/public/fonts/Orbitron-Bold.ttf"
 					as="font"
 					type="font/ttf"
 					crossOrigin=""

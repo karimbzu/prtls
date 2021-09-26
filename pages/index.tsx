@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.scss';
 import { useEffect } from 'react';
 import Background from '../components/three-scene/Background';
 import TestComponent from '../components/test';
+import ComingSoon from '../components/comingSoon/ComingSoon';
 
 const Home: NextPage = () => {
 	useEffect(() => {
@@ -24,7 +25,7 @@ const Home: NextPage = () => {
 				<Background />
 			</div>
 			<main>
-				<TestComponent />
+				<ComingSoon />
 			</main>
 
 			{/* <footer></footer> */}
