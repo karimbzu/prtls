@@ -24,21 +24,21 @@ function MyApp({ Component, pageProps }: AppProps) {
 					sizes="16x16"
 					href="public/images/favicon-16x16.png"
 				/>
+				<link
+					rel="preload"
+					href="/public/fonts/Orbitron Medium.ttf"
+					as="font"
+					type="font/ttf"
+					crossOrigin=""
+				/>
+				<link
+					rel="preload"
+					href="/public/fonts/Roboto-Thin.ttf"
+					as="font"
+					type="font/ttf"
+					crossOrigin=""
+				/>
 			</Head>
-			{/* <link
-				rel="preload"
-				href="ralewaythin.woff2"
-				as="font"
-				type="font/woff2"
-				crossOrigin=""
-			/>
-			<link
-				rel="preload"
-				href="/public/fonts/ralewaythin.woff"
-				as="font"
-				type="font/woff2"
-				crossOrigin=""
-			/> */}
 			<Component {...pageProps} />
 		</>
 	);
