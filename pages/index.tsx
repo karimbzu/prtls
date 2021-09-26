@@ -3,17 +3,30 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import { useEffect } from 'react';
 import Background from '../components/three-scene/Background';
-import TestComponent from '../components/test';
 import ComingSoon from '../components/comingSoon/ComingSoon';
+import Navbar from '../components/nav/Navbar';
 
 const Home: NextPage = () => {
 	useEffect(() => {
 		if (window.WebGL2RenderingContext || window.WebGLRenderingContext) {
 			console.log('WebGL rendering correctly');
 		} else {
-			throw Error('WebGL not rendering correctly');
+			throw Error('Please turn on WebGL for full experience');
 		}
 	});
+
+	useEffect(() => {
+		function logScroll(e: Event) {
+			console.log(e);
+		}
+
+		window.addEventListener('wheel', (e) => {
+			logScroll(e);
+		});
+		return () => {
+			window.removeEventListener('wheel', (e) => null);
+		};
+	}, []);
 
 	return (
 		<div className={styles.container}>
@@ -25,10 +38,9 @@ const Home: NextPage = () => {
 				<Background />
 			</div>
 			<main>
+				<Navbar />
 				<ComingSoon />
 			</main>
-
-			{/* <footer></footer> */}
 		</div>
 	);
 };
