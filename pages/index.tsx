@@ -19,7 +19,6 @@ const Home: NextPage = () => {
 			<Head>
 				<title>Portals.art</title>
 				<meta name="description" content="Enter the Portal" />
-				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<div className={styles.canvasContainer}>
 				<Background />
