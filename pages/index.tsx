@@ -27,7 +27,7 @@ const Home: NextPage = () => {
 				<TestComponent />
 			</main>
 
-			<footer></footer>
+			{/* <footer></footer> */}
 		</div>
 	);
 };
