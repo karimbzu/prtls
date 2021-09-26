@@ -3,6 +3,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.scss';
 import { useEffect } from 'react';
 import Background from '../components/three-scene/Background';
+import TestComponent from '../components/test';
 
 const Home: NextPage = () => {
 	useEffect(() => {
@@ -23,7 +24,9 @@ const Home: NextPage = () => {
 			<div className={styles.canvasContainer}>
 				<Background />
 			</div>
-			<main></main>
+			<main>
+				<TestComponent />
+			</main>
 
 			<footer></footer>
 		</div>
