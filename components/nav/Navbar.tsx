@@ -4,7 +4,7 @@ import styles from './navbar.module.scss';
 export default function Navbar() {
 	return (
 		<div className={styles.logoContainer}>
-			<Image src={Logo} alt="Portals.art" layout="intrinsic" />
+			<Image src={Logo} alt="Portals.art" layout="intrinsic" priority={true} />
 		</div>
 	);
 }
