@@ -15,21 +15,8 @@ const Home: NextPage = () => {
 		}
 	});
 
-	useEffect(() => {
-		function logScroll(e: Event) {
-			console.log(e);
-		}
-
-		window.addEventListener('wheel', (e) => {
-			logScroll(e);
-		});
-		return () => {
-			window.removeEventListener('wheel', (e) => null);
-		};
-	}, []);
-
 	return (
-		<div className={styles.container}>
+		<div>
 			<Head>
 				<title>Portals.art</title>
 				<meta name="description" content="Enter the Portal" />

@@ -1,13 +1,13 @@
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import Ring from './Ring';
-import { Suspense } from 'react';
+import { Suspense, useRef } from 'react';
 import { Preload, OrbitControls, Stars } from '@react-three/drei';
 
 export default function Background() {
 	return (
 		<Canvas
 			style={{ height: '100vh', position: 'absolute', background: 'black' }}
-			camera={{ position: [40, 1, 0.1] }}
+			camera={{ position: [45, 1, 0.1] }}
 		>
 			<Suspense fallback={null}>
 				<Ring />
@@ -19,7 +19,7 @@ export default function Background() {
 					saturation={0} // Saturation 0-1 (default=0)
 					fade // Faded dots (default=false)
 				/>
-				<OrbitControls enablePan={false} />
+				<OrbitControls enablePan={false} enableZoom={false} />
 				<Preload all />
 			</Suspense>
 		</Canvas>
