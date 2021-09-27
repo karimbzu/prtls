@@ -10,37 +10,37 @@ function MyApp({ Component, pageProps }: AppProps) {
 				<link
 					rel="apple-touch-icon"
 					sizes="152x152"
-					href="/public/images/apple-touch-icon-152x152.png"
+					href="/images/apple-touch-icon-152x152.png"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="32x32"
-					href="public/images/favicon-32x32.png"
+					href="/images/favicon-32x32.png"
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="16x16"
-					href="public/images/favicon-16x16.png"
+					href="/images/favicon-16x16.png"
 				/>
 				<link
 					rel="preload"
-					href="/public/fonts/Orbitron-Medium.ttf"
+					href="/fonts/Orbitron-Medium.ttf"
 					as="font"
 					type="font/ttf"
 					crossOrigin=""
 				/>
 				<link
 					rel="preload"
-					href="/public/fonts/Orbitron-Bold.ttf"
+					href="/fonts/Orbitron-Bold.ttf"
 					as="font"
 					type="font/ttf"
 					crossOrigin=""
 				/>
 				<link
 					rel="preload"
-					href="/public/fonts/Roboto-Thin.ttf"
+					href="/fonts/Roboto-Thin.ttf"
 					as="font"
 					type="font/ttf"
 					crossOrigin=""
