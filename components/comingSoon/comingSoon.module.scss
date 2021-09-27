@@ -11,20 +11,20 @@
 	width: 300px;
 	color: whitesmoke;
 	background: rgba(204, 204, 204, 0.2);
-	padding: 10px;
-	padding-left: 25px;
+	padding: 12px 10px 10px 25px;
 	width: 300px;
 	text-align: left;
 	border-radius: 10px;
-}
-.loading::after {
-	overflow: hidden;
-	display: inline-block;
-	vertical-align: bottom;
-	-webkit-animation: ellipsis steps(4, end) 900ms infinite;
-	animation: ellipsis steps(4, end) 900ms infinite;
-	content: '\2026'; /* ascii code for the ellipsis character */
-	width: 0px;
+
+	&::after {
+		overflow: hidden;
+		display: inline-block;
+		vertical-align: bottom;
+		-webkit-animation: ellipsis steps(4, end) 900ms infinite;
+		animation: ellipsis steps(4, end) 900ms infinite;
+		content: '\2026'; /* ascii code for the ellipsis character */
+		width: 0px;
+	}
 }
 
 @keyframes ellipsis {

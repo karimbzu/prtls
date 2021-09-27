@@ -4,12 +4,6 @@
 	height: 8%;
 	position: absolute;
 	z-index: 1;
-
-	@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
-		selector {
-			background: rgba(204, 204, 204, 0.6);
-		}
-	}
 }
 
 .logoContainer {
@@ -18,4 +12,9 @@
 	left: 2%;
 	width: 275px;
 	z-index: 2;
+
+	@media (max-width: 500px) {
+		width: 60px;
+		top: 5%;
+	}
 }
