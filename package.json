@@ -14,7 +14,6 @@
     "@react-three/postprocessing": "^2.0.5",
     "@types/react-fade-in": "^2.0.2",
     "@types/three": "^0.132.1",
-    
     "next": "11.1.2",
     "postprocessing": "^6.23.0",
     "react": "17.0.2",
