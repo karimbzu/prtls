@@ -1,3 +1,5 @@
+@import '/styles/variables';
+
 .loading {
 	font-family: Orbitron-Bold;
 	font-size: 2rem;
@@ -10,7 +12,7 @@
 	margin-right: auto;
 	width: 300px;
 	color: whitesmoke;
-	background: rgba(204, 204, 204, 0.2);
+	background: $CardOpacity;
 	padding: 12px 10px 10px 25px;
 	width: 300px;
 	text-align: left;
